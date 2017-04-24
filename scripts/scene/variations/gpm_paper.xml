@@ -1,0 +1,30 @@
+<Test>
+    <SelectedTechniques>
+        <Selected name="SPPM" />
+        <!-- Used for now -->
+        <!--<Selected name="SPPMSplat" />-->
+        <Selected name="GPM_L2" />
+        <Selected name="GPM_L1" />
+
+        <Selected name="GPT_L1" />
+        <Selected name="GPT_L2" />
+
+        <Selected name="GBDPT_L2" />
+        <Selected name="GBDPT_L1" />
+
+        <Selected name="PT" />
+        <Selected name="BDPT" />
+
+    </SelectedTechniques>
+    <Changes>
+        <!-- This is generation of all the test case:
+          - Diffuse / HV
+          - Diffuse / HV / ME (ME)
+          - Diffuse / ME (ME_Only)
+        -->
+    </Changes>
+
+    <DeletedTechniques>
+
+    </DeletedTechniques>
+</Test>

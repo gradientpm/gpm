@@ -1,0 +1,46 @@
+<rules>
+    <!-- filename rules for computing MSE -->
+        
+    <technique name="GPM_L1">
+        <prefix name="recons" out="" />
+    </technique>
+    
+    <technique name="GPM_L2">
+        <prefix name="recons" out="" />	
+    </technique>
+    
+    <technique name="GBDPT_L1">
+        <prefix name="recons" out="recons" />
+        <prefix name="throughput" out="throughput" />
+    </technique>
+    
+    <technique name="GBDPT_L2">
+        <prefix name="recons" out="recons" />
+        <prefix name="throughput" out="throughput" />
+    </technique>
+    
+    <technique name="GPT_L1">
+        <prefix name="recons" out="recons" />
+        <prefix name="throughput" out="throughput" />
+    </technique>
+    
+    <technique name="GPT_L2">
+        <prefix name="recons" out="recons" />
+        <prefix name="throughput" out="throughput" />
+    </technique>
+    
+    <technique name="SPPM">
+        <prefix name="" out="" />
+    </technique>
+    
+    <!--
+    
+    
+    <technique name="PT">
+        <prefix name="pass" out="" />
+    </technique>
+    <technique name="BDPT">
+        <prefix name="pass" out="" />
+    </technique>
+    -->
+</rules>

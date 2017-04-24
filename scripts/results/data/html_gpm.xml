@@ -1,0 +1,88 @@
+<Config>
+	<Techniques>
+		<Technique name="Reference" filename="Ref" />
+
+		<!-- MC techniques -->
+		<Technique name="SPPM" filename="SPPM"/>
+        
+        <!--
+		<Technique name="PT" filename="PT" prefix="pass"/>
+		<Technique name="BDPT" filename="BDPT" prefix="pass" />
+        -->
+        
+		<!-- GPM -->
+		<Technique name="GPM_L1" filename="GPM_L1" prefix="recons"/>
+		<Technique name="GPM_L2" filename="GPM_L2" prefix="recons"/>
+
+		<!-- Gradient techniques -->
+		<Technique name="GPT_L1" filename="GPT_L1" prefix="recons" />
+		<Technique name="GBDPT_L1" filename="GBDPT_L1" prefix="recons" />
+		<Technique name="GPT_L2" filename="GPT_L2" prefix="recons" />
+		<Technique name="GBDPT_L2" filename="GBDPT_L2" prefix="recons" />
+
+	</Techniques>
+	<Curves>
+		<Entries>
+			<!--
+            <Entry name="Path tracing"                          technique="PT" color="#984ea3" dashed="true" />
+			<Entry name="Bidirectional path tracing"            technique="BDPT" color="#ff7f00" dashed="true" />
+            -->
+            
+            <Entry name="Stochastic progressive photon mapping" technique="SPPM" color="#ffff33" dashed="true" />
+            <Entry name="Gradient photon mapping (L2)"             technique="GPM_L2" color="#e41a1c" dashed="false" time="GPM_L2" />
+            <Entry name="Gradient photon mapping (L1)"             technique="GPM_L1" color="#e41a1c" dashed="true" time="GPM_L1" />
+            
+            <Entry name="Gradient path tracing (L2)"            technique="GPT_L2" color="#4daf4a" dashed="true" time="GPT_L2" />
+			<Entry name="Gradient bidirectional path tracing (L2)" technique="GBDPT_L2" color="#377eb8" dashed="true" time="GBDPT_L2" />
+            
+		</Entries>
+		
+		<Section name="RMSE">
+			<Curve csv="rmse" ylabel="RMSE value" xlabel="Rendering time (seconds)" log="false" />
+			<Curve csv="rmse" ylabel="log(RMSE value)" xlabel="Log(Rendering time)" log="true" />
+		</Section>
+	</Curves>
+	<Comparisons>
+		<!-- The main comparison !!!! -->
+		<Compare title="Comparison between photon mapping techniques">
+			<Element name="Reference" />
+			<Element name="GPM_L1" />
+			<Element name="GPM_L2" />
+			<Element name="SPPM" />
+		</Compare>
+		<Compare title="Comparison between gradient techniques (L1)">
+			<Element name="Reference" />
+			<Element name="GPM_L1" />
+			<Element name="GPT_L1" />
+			<Element name="GBDPT_L1" />
+		</Compare>
+		<Compare title="Comparison between gradient techniques (L2)">
+			<Element name="Reference" />
+			<Element name="GPM_L2" />
+			<Element name="GPT_L2" />
+			<Element name="GBDPT_L2" />
+		</Compare>
+
+		<!-- Some other comparisons :D -->
+        <!--
+		<Compare title="Comparison with MC techniques">
+			<Element name="Reference" />
+			<Element name="SPPM" /> 
+			<Element name="PT" />
+			<Element name="BDPT" />
+		</Compare>
+		<Compare title="Previous works between MC and Gradient techniques (L1)">
+			<Element name="PT" />
+			<Element name="BDPT" />
+			<Element name="GPT_L1" /> 
+			<Element name="GBDPT_L1" />
+		</Compare>
+		<Compare title="Previous works between MC and Gradient techniques (L2)">
+			<Element name="PT" />
+			<Element name="BDPT" />
+			<Element name="GPT_L2" />
+			<Element name="GBDPT_L2" />
+		</Compare>
+        -->
+	</Comparisons>
+</Config>
