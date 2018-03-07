@@ -1,29 +1,21 @@
 Gradient-Domain Photon Density Estimation
 =========================================
 
-This is the experimental code extending Mitsuba 0.5 for gradient-domain rendering. It includes Gradient-Domain Photon Density Estimation (G-PM), 
+This is the code release for the paper "Gradient-Domain Photon Density Estimation" in Eurographics 2017. It extends Mitsuba 0.5.0 to include the following rendering techniques: Gradient-Domain Photon Density Estimation(G-PM), 
 Gradient-Domain Path Tracing (G-PT) and Gradient-Domain Bidirectional Path Tracing (G-BDPT). 
 
 The code can be compiled on Windows 10 with Visual Studio 2013, and Arch Linux platform. 
 
 Download
 ========
-- Code on GitHub [https://github.com/gradientpm/gpm](https://github.com/gradientpm/gpm) 
+- [Paper](http://sonhua.github.io/pdf/hua-gpm-eg17.pdf)
 
-- Scene data and reference images 
-  + [Bathroom](https://dl.dropboxusercontent.com/u/37606091/research/2017_GPM/bathroom3_scene.zip)
-  + [Torus](https://dl.dropboxusercontent.com/u/37606091/research/2017_GPM/torus_scene.zip)
-  + [Bookshelf](https://dl.dropboxusercontent.com/u/37606091/research/2017_GPM/bookshelf_scene.zip)
-  + [Sponza](https://dl.dropboxusercontent.com/u/37606091/research/2017_GPM/sponza_scene.zip)
-  + [Veach-Lamp](https://dl.dropboxusercontent.com/u/37606091/research/2017_GPM/veach-lamp_scene.zip)
+- [Scene data and reference images]
+  (http://beltegeuse.s3-website-ap-northeast-1.amazonaws.com/research/2017_GPM/comparison/index.html)
   
 - Mitsuba dependencies
   + [Windows](https://www.mitsuba-renderer.org/repos/dependencies_windows) 
   + [Mac](https://www.mitsuba-renderer.org/repos/dependencies_macos)
-  
-- [Paper](https://dl.dropboxusercontent.com/u/37606091/research/2017_GradientPM_Hua.pdf)
-  
-- [Supplementary HTML](https://dl.dropboxusercontent.com/u/37606091/research/2017_gpm/comparison/index.html)
   
 License
 =======
