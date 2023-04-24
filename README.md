@@ -12,7 +12,7 @@ Download
 ========
 - [Paper](http://sonhua.github.io/pdf/hua-gpm-eg17.pdf)
 
-- [Scene data and reference images](http://beltegeuse.s3-website-ap-northeast-1.amazonaws.com/research/2017_GPM/comparison/index.html)
+- [Scene data and reference images](https://data.adrien-gruson.com/research/2017_GPM/comparison/index.html)
   
 - Mitsuba dependencies
   + [Windows](https://www.mitsuba-renderer.org/repos/dependencies_windows) 
